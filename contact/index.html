@@ -9,7 +9,7 @@
 	<link rel="preload" as="font" type="font/woff2" href="../assets/css/fonts/inter-500.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="../assets/css/fonts/inter-700.woff2" crossorigin>
 	<link rel="preload" as="font" type="font/woff2" href="../assets/css/fonts/inter-800.woff2" crossorigin>
-	<link rel="stylesheet" href="../assets/css/style.css?v=19"><link rel="stylesheet" href="../assets/css/jquery.tipsy.css?v=19"><link rel="stylesheet" href="../assets/css/dark.css?v=19"><link rel="stylesheet" href="../assets/css/icomoon.css?v=19"><link rel="stylesheet" href="../assets/css/jquery.dataTables.min.css?v=19">	<script>
+	<link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="../assets/css/jquery.tipsy.css"><link rel="stylesheet" href="../assets/css/dark.css"><link rel="stylesheet" href="../assets/css/icomoon.css"><link rel="stylesheet" href="../assets/css/jquery.dataTables.min.css">	<script>
 	    if (typeof localStorage.darkmode === 'undefined') {
 	        localStorage.darkmode = '0';
 	    }
@@ -22,7 +22,7 @@
 	        document.documentElement.setAttribute("data-theme", "light");
 	    }
 	</script>
-	<script src="../assets/js/jquery-3.6.0.min.js?v=19"></script><script src="../assets/js/dark.js?v=19"></script><script src="../currency-converter/converter.js?v=19"></script><script src="../currency-converter/currencies.js?v=19"></script><script src="../assets/js/jquery.tipsy.min.js?v=19"></script><script src="../assets/js/jquery.dataTables.min.js?v=19"></script><script src="../assets/js/functions.js?v=19"></script><script src="../assets/js/init.js?v=19"></script><script src="../assets/js/search.js?v=19"></script>	<link rel="icon" type="image/png" sizes="512x512" href="../assets/img/coffee-breaks.png?v=19">	<!-- LAST GENERATED: 2022-10-23T20:21:03p -->
+	<script src="../assets/js/jquery-3.6.0.min.js"></script><script src="../assets/js/dark.js"></script><script src="../currency-converter/converter.js"></script><script src="../currency-converter/currencies.js"></script><script src="../assets/js/jquery.tipsy.min.js"></script><script src="../assets/js/jquery.dataTables.min.js"></script><script src="../assets/js/functions.js"></script><script src="../assets/js/init.js"></script><script src="../assets/js/search.js"></script>	<link rel="icon" type="image/png" sizes="512x512" href="../assets/img/coffee-breaks.png">	<!-- LAST GENERATED: 2022-10-22T23:51:06p -->
 </head>
 <body id="top">
 
@@ -290,8 +290,48 @@ table th {
 
 </style>
 
+<div class="container">
+    <form id="contact-form" name="contact-form" action="https://5.100.155.93/contact/request/" method="post">
+        <table id="contact-table">
+            <tr>
+            	<th>Name</th>
+            	<td><input type="text" class="contact-regular" id="contact-name" name="contact_name" placeholder="Name" maxlength="254" required autocomplete="off"></td>
+            </tr>
+            <tr>
+            	<th>Email</th>
+            	<td><input type="text" class="contact-regular" id="contact-email" name="contact_email" placeholder="Email" maxlength="254" required autocomplete="off"></td>
+            </tr>
+            <tr>
+            	<th>Subject</th>
+            	<td><input type="text" class="contact-regular" id="contact-subject" name="contact_subject" placeholder="Subject" maxlength="254" required autocomplete="off"></td>
+            </tr>
+            <tr>
+            	<th>Comment</th>
+            	<td><textarea class="contact-large" id="contact-comment" name="contact_comment" placeholder="Comment" maxlength="6000" required autocomplete="off"></textarea></td>
+            </tr>
+            <tr class="somebody">
+            	<th>Body</th>
+            	<td><textarea class="contact-large" id="contact-body" name="contact_body" placeholder="Body" maxlength="6000" autocomplete="off"></textarea></td>
+            </tr>
+            <tr>
+            	<th>Verification</th>
+            	<td>
 
-<br>To contact the maintainer of this archive, create an issue <a class="internal underline" href="https://github.com/IShouldTestMyCode/hrt-cafe-archive/issues">here. <span class="icon-fa5-key font90"></span></a> If you would rather use email, send me an email to anonymous-user87349@protonmail.ch and if you prefer to use PGP, you can find it on the MIT keyserver.</div></div>		</div>
+                    <span id="captcha" style="background:url('data:image/jpeg;base64,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');"></span><a href="index.html#" id="captcha-refresh"><span data-toggle="tooltip" class="tooltips icon-fa4-refresh" title="Refresh"></span></a><br>
+            	    <input type="text" id="captcha-input" placeholder="Verification" name="captcha_input" class="form-control contact-tiny" maxlength="5" required autocomplete="off">
+                    <span class="icon-fa5-spinner rotating" id="loading-img"></span>
+                    <button type="submit" class="btn btn-primary" name="submit-button" value="Submit" id="submit-button">Submit</button>
+            	</td>
+            </tr>
+            <tr>
+                <th></th><td><div id="ajax-message"></div></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+<br>If you wish to use a <a class="internal underline" href="../pgp/index.html">PGP <span class="icon-fa5-key font90"></span></a> key for encryption, please include your public key.</div></div>		</div>
 
 		<div class="footer">
 	<p class="small">Prices and exchange rates are for informational purposes only.
